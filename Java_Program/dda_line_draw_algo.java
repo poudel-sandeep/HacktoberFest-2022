@@ -9,12 +9,14 @@ class mydrawing extends JComponent
 {
    public void paint(Graphics g)
    {
-       double xc, yc, dx,dy,step;//xc-->xincrement, yc-->yincrement
+       double xc, yc, dx,dy,step;   //xc-->xincrement, yc-->yincrement
        double x,y;                  //x,y-->point to be plotted
-      int x1=200,x2=50,y1=60,y2=200;//step 2
-       dx=x2-x1;//difference of x
-       dy=y2-y1;//difference of y  //step2
-       if(Math.abs(dx)>Math.abs(dy))  //step-3
+
+      int x1=200,x2=50,y1=60,y2=200;    //step 2
+       dx=x2-x1;                        //difference of x
+       dy=y2-y1;                        //difference of y  //step2
+
+       if(Math.abs(dx)>Math.abs(dy))    //step-3
             step=Math.abs(dx);
        else
             step=Math.abs(dy);
